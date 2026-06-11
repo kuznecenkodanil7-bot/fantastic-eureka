@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "chatreminder",
+  "version": "${version}",
+  "name": "Chat Reminder",
+  "description": "Client-side Fabric mod that writes a configurable reminder message to chat on a configurable timer.",
+  "authors": [
+    "Helena"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/chatreminder/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ru.helena.chatreminder.ChatReminderClient"
+    ]
+  },
+  "mixins": [
+    "chatreminder.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21"
+  }
+}
